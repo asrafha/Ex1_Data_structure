@@ -14,11 +14,13 @@ public class Array_Of_Points {
 	
 	public Array_Of_Points (Array_Of_Points other) {
 		this.count=other.count;
-		this.points=other.points;
+		this.points =new Points (MAX) ;
+		for (int i= 0 ;i< count ;i++)
+			this.Point[i]=new Point(other.points[i])
 	}
 	
 
-
+   
 	public boolean addPoint (Point one) {
 		if (count < points.length) {
 			points[count]=one ;
